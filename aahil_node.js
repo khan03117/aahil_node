@@ -11,7 +11,7 @@ const options = {
    cert: fs.readFileSync(path.resolve(__dirname, './ssl/cert.pem')),
 };
 
-const port = process.env.PORT || 5050;
+const port = process.env.PORT || 5112;
 
 app.get('/', (req, res) => {
    res.send('Hello from simple server :)');
